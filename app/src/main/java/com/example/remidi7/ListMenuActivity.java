@@ -1,7 +1,12 @@
 package com.example.remidi7;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,7 +40,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"1", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar1);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -43,7 +54,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"2", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar2);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -51,7 +68,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"3", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar3);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -59,7 +82,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"4", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar4);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -67,7 +96,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"5", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar5);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -75,7 +110,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"6", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar1);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -83,7 +124,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"7", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar2);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -91,7 +138,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"8", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar3);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
 
@@ -99,7 +152,13 @@ public class ListMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"9", Toast.LENGTH_LONG);
-                Picasso.with(getApplicationContext()).load(R.drawable.ic_launcher_background).into(imageView);
+
+                Resources res = getResources();
+                Bitmap src = BitmapFactory.decodeResource(res, R.drawable.img_avatar4);
+
+                RoundedBitmapDrawable dr = RoundedBitmapDrawableFactory.create(res, src);
+                dr.setCornerRadius(1000);
+                imageView.setImageDrawable(dr);
             }
         });
     }
